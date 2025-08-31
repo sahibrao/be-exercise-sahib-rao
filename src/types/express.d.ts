@@ -8,5 +8,8 @@ declare global {
     interface Request {
       user?: IUser;
     }
+    interface Response {
+      user?: IUser;
+    }
   }
 }
