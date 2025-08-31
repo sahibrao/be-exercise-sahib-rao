@@ -2,7 +2,7 @@
 
 ## Overview
 
-Creating a CRUD API, for users to read, create, update and delete todo list items.
+Creating a CRUD API, for users to read, create, update and delete todo list items. As DB layer is assumed to exist, the application only works within the mocked test environment.
 
 ## Libraries
 
@@ -49,9 +49,11 @@ src/
 │   ├── controllers/
 |   |   ├── auth.controller.test.ts
 |   |   └── todo.controller.test.ts
-│   └── controllers/
-|       ├── auth.controller.test.ts
-|       └── todo.controller.test.ts
+|   ├── integration/
+|   |   ├── todo.integration.test.ts
+│   └── services/
+|       ├── auth.services.test.ts
+|       └── todo.services.test.ts
 │
 ├── types/               # Custom TypeScript types and definitions
 │   └── express.d.ts
